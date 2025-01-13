@@ -68,3 +68,20 @@ body {
 .login-container .google-button:hover {
   background-color: #c1351d;
 }
+
+.login-container p{
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.login-container p button {
+  font-size: 14px;
+  color: #0070f3;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.login-container p button:hover {
+  color: #005bb5;
+}
