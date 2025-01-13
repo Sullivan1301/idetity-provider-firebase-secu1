@@ -31,7 +31,7 @@ export default function Login() {
     };
 
     return (
-        <div style={{ textAlign: "center", marginTop: "50px" }}>
+        <div className="login-container">
             <h1>Login</h1>
             <form onSubmit={handleLogin}>
                 <input
@@ -41,7 +41,6 @@ export default function Login() {
                     onChange={(e) => setEmail(e.target.value)}
                     required
                 />
-                <br />
                 <input
                     type="password"
                     placeholder="Password"
@@ -49,11 +48,9 @@ export default function Login() {
                     onChange={(e) => setPassword(e.target.value)}
                     required
                 />
-                <br />
                 <button type="submit">Login</button>
             </form>
-            <br />
-            <button onClick={handleGoogleLogin}>Login with Google</button>
+            <button className="google-button" onClick={handleGoogleLogin}>Login with Google</button>
         </div>
     );
 }
